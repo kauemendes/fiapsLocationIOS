@@ -13,6 +13,10 @@
 		8D518ED81AE9AAA50045330E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D518ED71AE9AAA50045330E /* Images.xcassets */; };
 		8D518EDB1AE9AAA50045330E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D518ED91AE9AAA50045330E /* LaunchScreen.xib */; };
 		8D518EE71AE9AAA50045330E /* fiapsLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D518EE61AE9AAA50045330E /* fiapsLocationTests.swift */; };
+		8D518EF11AE9AABD0045330E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D518EF01AE9AABD0045330E /* MapKit.framework */; };
+		8D518EF91AE9C4D80045330E /* FIAPAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D518EF81AE9C4D80045330E /* FIAPAnnotation.swift */; };
+		8D518EFB1AE9C68C0045330E /* METROAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D518EFA1AE9C68C0045330E /* METROAnnotation.swift */; };
+		8D518EFD1AE9D6980045330E /* POIAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D518EFC1AE9D6980045330E /* POIAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		8D518EE01AE9AAA50045330E /* fiapsLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fiapsLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D518EE51AE9AAA50045330E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D518EE61AE9AAA50045330E /* fiapsLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fiapsLocationTests.swift; sourceTree = "<group>"; };
+		8D518EF01AE9AABD0045330E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8D518EF81AE9C4D80045330E /* FIAPAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIAPAnnotation.swift; sourceTree = "<group>"; };
+		8D518EFA1AE9C68C0045330E /* METROAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = METROAnnotation.swift; sourceTree = "<group>"; };
+		8D518EFC1AE9D6980045330E /* POIAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POIAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D518EF11AE9AABD0045330E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +68,7 @@
 		8D518EC21AE9AAA40045330E = {
 			isa = PBXGroup;
 			children = (
+				8D518EF01AE9AABD0045330E /* MapKit.framework */,
 				8D518ECD1AE9AAA40045330E /* fiapsLocation */,
 				8D518EE31AE9AAA50045330E /* fiapsLocationTests */,
 				8D518ECC1AE9AAA40045330E /* Products */,
@@ -78,6 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				8D518ED01AE9AAA50045330E /* AppDelegate.swift */,
+				8D518EFA1AE9C68C0045330E /* METROAnnotation.swift */,
+				8D518EFC1AE9D6980045330E /* POIAnnotation.swift */,
+				8D518EF81AE9C4D80045330E /* FIAPAnnotation.swift */,
 				8D518ED21AE9AAA50045330E /* ViewController.swift */,
 				8D518ED41AE9AAA50045330E /* Main.storyboard */,
 				8D518ED71AE9AAA50045330E /* Images.xcassets */,
@@ -161,6 +174,11 @@
 				TargetAttributes = {
 					8D518ECA1AE9AAA40045330E = {
 						CreatedOnToolsVersion = 6.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					8D518EDF1AE9AAA50045330E = {
 						CreatedOnToolsVersion = 6.3;
@@ -214,6 +232,9 @@
 			files = (
 				8D518ED31AE9AAA50045330E /* ViewController.swift in Sources */,
 				8D518ED11AE9AAA50045330E /* AppDelegate.swift in Sources */,
+				8D518EFB1AE9C68C0045330E /* METROAnnotation.swift in Sources */,
+				8D518EFD1AE9D6980045330E /* POIAnnotation.swift in Sources */,
+				8D518EF91AE9C4D80045330E /* FIAPAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
